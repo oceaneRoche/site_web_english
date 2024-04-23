@@ -66,10 +66,18 @@ document.onreadystatechange = function () {
 
                     cartItemsContainer.appendChild(cartItemDiv);
 
-                    totalAmount += parseFloat(item.price.substring(1)) * item.quantity; // Calculer le montant total
+                    // Convertir le prix de l'article en nombre à virgule flottante
+                    var price = parseFloat(item.price.substring(1));
+                    // Multiplier le prix par la quantité
+                    var itemTotal = price * item.quantity;
+                    // Ajouter le montant total de cet article au montant total général
+                    totalAmount += itemTotal;
                 });
 
-                totalAmountSpan.textContent = '$' + totalAmount.toFixed(2); // Mettre à jour le montant total affiché
+                // Formater le montant total pour afficher deux décimales après la virgule
+                var formattedTotalAmount = totalAmount.toFixed(2);
+                // Mettre à jour le montant total affiché
+                totalAmountSpan.textContent = '$' + formattedTotalAmount;
             }
 
             checkoutButton.addEventListener('click', function () {
@@ -79,6 +87,5 @@ document.onreadystatechange = function () {
 
             renderCart();
         });
-
     }
 }
