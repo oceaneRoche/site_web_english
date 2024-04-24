@@ -1,4 +1,3 @@
-/* Réinitialisation des styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -132,4 +131,74 @@ h2 {
 
 .btn:hover {
     background-color: #555;
+}
+.about-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h5 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li:before {
+    content: "\2022"; /* Utilisation d'un point pour les puces */
+    color: #fff;
+    margin-right: 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
