@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,11 +41,14 @@ nav ul li {
 }
 
 .cart-icon {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
 .cart-icon img {
-    width: 40px;
+    width: 30px;
     height: auto;
     vertical-align: middle;
 }
@@ -55,8 +63,8 @@ nav ul li {
     font-size: 14px;
     line-height: 20px;
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -5px;
+    right: -5px;
 }
 
 section {
@@ -68,8 +76,8 @@ h2 {
 }
 
 .product {
-    width: 27%; /* Ajustement de la largeur pour 4 produits par ligne */
-    margin-right: 2%; /* Espace entre chaque produit */
+    width: 28%; /* Ajustement de la largeur pour 4 produits par ligne */
+    margin-right: 5%; /* Espace entre chaque produit */
     display: inline-block;
     background-color: #fff;
     padding: 20px;
@@ -117,4 +125,51 @@ h2 {
 
 .product button.btn:hover {
     background-color: #2980b9;
+}
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li:before {
+    content: "\2022"; /* Utilisation d'un point pour les puces */
+    color: #fff;
+    margin-right: 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour s'assurer que l'en-tête est au-dessus du contenu de la page */
+    padding: 10px 0; /* Ajoutez un peu de marge intérieure si nécessaire */
+}
+
+.site-menu {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Pour limiter la largeur du contenu de l'en-tête */
+    margin: 0 auto; /* Pour centrer le contenu */
+}
+
+.site-menu img {
+    margin-right: 10px; /* Espace entre l'image et le titre */
 }

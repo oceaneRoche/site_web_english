@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -201,4 +200,22 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour s'assurer que l'en-tête est au-dessus du contenu de la page */
+    padding: 10px 0; /* Ajoutez un peu de marge intérieure si nécessaire */
+}
+
+.site-menu {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Pour limiter la largeur du contenu de l'en-tête */
+    margin: 0 auto; /* Pour centrer le contenu */
+}
+
+.site-menu img {
+    margin-right: 10px; /* Espace entre l'image et le titre */
 }

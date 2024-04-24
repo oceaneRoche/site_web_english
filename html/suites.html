@@ -10,14 +10,12 @@
 <a href="index.html">Back to Home</a><br>
 <header>
     <div class="container">
-        <img src="../images/US-Army-Logo.png" alt="200" width="200" height="100">
-        <h1>Military Clothing</h1>
-        <p class="site-description">Your destination for quality military clothing</p>
+        <div class="site-menu"><img src="../images/US-Army-Logo.png" alt="200" width="150" height="75">
+            <pre><h3>Military Clothing</h3><h5>     Your destination for quality military clothing</h5></pre></div>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="suites.html">Produits</a></li>
-                <li><a href="#about">À Propos</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="suites.html">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,19 +25,27 @@
         </div>
     </div>
 </header>
+<section>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
 <section id="Tops">
     <div class="container">
         <h2>T-shirt</h2>
         <div class="product">
             <img src="../images/tshirt%20camouflage.jpg" alt="Camouflage t-shirt" height="150" width="130">
             <h5>Camouflage T-shirt</h5>
-            <p class="price">$35</p>
+            <p class="price">$35,00</p>
             <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
         <div class="product">
             <img src="../images/tshirt%20entrainement.jpg" alt="Training T-shirt" height="150" width="175">
             <h5>Training T-shirt</h5>
-            <p class="price">$32,34</p>
+            <p class="price">$32,00</p>
             <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
     </div>
@@ -93,13 +99,13 @@
             <img src="../images/chemise%20officier%20us.jpg" alt="chemise officier" height="110" width="133">
             <h5>Officer Shirt</h5>
             <p class="price">$28,00</p>
-            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            <button class="btn" onclick="renderCart()">Add to Cart</button>
         </div>
         <div class="product">
             <img src="../images/chemise%20camouflage%20Bdu.jpg" alt="Camouflage BDU" height="110" width="148">
             <h5>Camouflage Shirt BDU</h5>
             <p class="price">$28,00</p>
-            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            <button class="btn" onclick="renderCart()">Add to Cart</button>
         </div>
         <div class="product">
             <img src="../images/chemise%20de%20combat%20desert.jpg" alt="Combat desert" height="110" width="175">
@@ -208,6 +214,18 @@
         </div>
     </div>
 </section>
-</body>
+<footer id="contact">
+    <div class="container">
+        <h4>Contact</h4>
+        <p>If you have any questions or inquiries, please feel free to contact us:</p>
+        <ul>
+            <li>Email: contact@militaryclothing.com</li>
+            <li>Phone: +1234567890</li>
+            <li>Address: 2503 Vine Street, Hays, United States of America</li>
+        </ul>
+        <p>&copy; 2024 Military Clothing</p>
+    </div>
+</footer>
 <script src="../java_script/index.js"></script>
+</body>
 </html>
