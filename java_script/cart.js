@@ -1,5 +1,7 @@
 document.onreadystatechange = function () {
     if (document.readyState == 'interactive') {
+        console.log("c'est ok");
+
         var cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
 
         var cartItemsContainer = document.getElementById('cart-items');

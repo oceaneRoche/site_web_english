@@ -16,7 +16,6 @@ document.onreadystatechange = function () {
                 cartItems.push(item);
             }
             sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
-            alert("Product added to cart!");
             updateCartCounter(); // Met à jour le compteur de panier lorsque le produit est ajouté
         }
 
