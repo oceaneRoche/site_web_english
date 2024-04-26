@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="../css/carteBancaire.css">
+</head>
+<body>
+<div class="container">
+    <h2>Card Payment</h2>
+    <form id="payment-form">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" maxlength="16" placeholder="Enter your card number" required><br>
+
+        <label for="card-name">Name on Card:</label>
+        <input type="text" id="card-name" placeholder="Enter your name" required><br>
+
+        <div class="grid">
+            <div>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" maxlength="3" placeholder="CVV" required>
+            </div>
+        </div>
+
+        <button type="submit" id="pay-now">Pay Now</button>
+    </form>
+</div>
+<script>
+    const payNowButton = document.getElementById('pay-now');
+    payNowButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'paiement.html';
+    });
+</script>
+<script>
+    const cvvInput = document.getElementById('cvv');
+    cvvInput.addEventListener('input', function() {
+        cvvInput.type = 'password';
+    });
+</script>
+
+<script src="../java_script/carteBancaire.js"></script>
+</body>
+</html>

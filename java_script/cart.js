@@ -73,7 +73,7 @@ document.onreadystatechange = function () {
 
         checkoutButton.addEventListener('click', function () {
             // Redirection vers la page de paiement
-            window.location.href = 'paiement.html';
+            window.location.href = 'carteBancaire.html';
         });
 
         renderCart();
